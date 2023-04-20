@@ -92,7 +92,7 @@ import { BsCloudDownload } from "react-icons/bs";
 const Hero = () => {
     const cardVariants = {
         offscreen: {
-            scale: 20,
+            // scale: 20,
         },
         onscreen: {
             scale: [1.3, 1],
