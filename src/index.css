@@ -3,8 +3,24 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&family=Titillium+Web&display=swap");
-
 * {
     font-family: "Source Sans Pro", sans-serif;
     font-family: "Titillium Web", sans-serif;
+    
+}
+body{
+    overflow-x: hidden;
+}
+
+.app{
+    background:rgb(38,38,38);
+    color : #ffffff;
+
+    transition: 0.7s all ;
+}
+
+.light{
+    background:rgb(255, 255, 255);
+    color : #1b1b1b;
+    transition: 0.7s all;
 }

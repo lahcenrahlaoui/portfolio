@@ -1,8 +1,20 @@
-const Project = ({ img, project }) => {
+const Project = ({ img, project, theme }) => {
     return (
-        <div className="cursor-pointer  rounded-lg shadow-[0px_1px_5px_1px_rgba(0,0,0,0.56)]">
-            <img src={img} />
-            <div className=" text-center text-2xl text-bold py-4">
+        <div
+            className={` ${
+                !theme ? "bg-gray-400 text-black" : ""
+            } cursor-pointer h-96 w-80 overflow-hidden rounded-xl shadow-[0px_2px_8px_0px_rgba(99,99,99,0.2)] transition duration-200 hover:scale-105`}
+        >
+            <img
+                src={img}
+                style={{
+                    minWidth: "100%",
+                    minHeight: "70%",
+                    maxWidth: "100%",
+                    maxHeight: "70%",
+                }}
+            />
+            <div className=" text-center text-2xl text-bold py-9  ">
                 {project}
             </div>
         </div>
