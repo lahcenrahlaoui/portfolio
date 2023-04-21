@@ -42,7 +42,9 @@ const Projects = ({ theme }) => {
         <div className="flex flex-col justify-center items-center gap-8 py-20">
             <div className="text-4xl">Projects</div>
             <div className="flex justify-center items-center ">
-                <div className="px-36 
+                <div
+                    className="
+                                px-36 
                                 py-12 
                                 grid 
                                 grid-rows-[400px_minmax(100px,_1fr)]
@@ -50,8 +52,8 @@ const Projects = ({ theme }) => {
                                 sm:grid-cols-1
                                 md:grid-cols-3 
                                 lg:grid-cols-3  
-                                gap-10 
-                                 ">
+                                gap-10  "
+                >
                     {renderedProjects}
                 </div>
             </div>
@@ -60,3 +62,13 @@ const Projects = ({ theme }) => {
 };
 
 export default Projects;
+
+// px-36
+//                                 py-12
+//                                 grid
+//                                 grid-rows-[400px_minmax(100px,_1fr)]
+//                                 grid-cols-3
+//                                 sm:grid-cols-1
+//                                 md:grid-cols-3
+//                                 lg:grid-cols-3
+//                                 gap-10

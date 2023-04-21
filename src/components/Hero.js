@@ -142,9 +142,9 @@ const Hero = () => {
                         initial={{ y: 100 }}
                         animate={{ y: 0 }}
                         transition={{ ease: "easeOut", duration: 1.5 }}
-                        className=" flex justify-center items-center  px-6 py-3 bg-btn-yellow text-lg font-semibold"
+                        className=" flex justify-center items-center  px-6 py-3 hover:opacity-90 bg-btn-yellow text-lg font-semibold"
                     >
-                        <BsCloudDownload className="text-2xl"/> &nbsp; &nbsp;
+                        <BsCloudDownload className="text-2xl " /> &nbsp; &nbsp;
                         Download CV
                     </motion.button>
                 </div>

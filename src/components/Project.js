@@ -20,26 +20,36 @@ const Project = ({ img, project, theme }) => {
         //         {project}
         //     </div>
         // </div>
-
+        /***************************************
+         *
+         *
+         *
+         *
+         *
+         *
+         *
+         *
+         */
+        
         <div
-            className=" max-w-sm    
+            className=" max-w-sm
                         bg-white
-                        rounded-lg 
-                        shadow 
+                        rounded-lg
+                        shadow
                         cursor-pointer
                         overflow-hidden
                         flex flex-col
                        "
         >
             <div
-                className=" h-3/5 
-                            overflow-hidden 
+                className=" h-3/5
+                            overflow-hidden
                             border-b-2"
             >
                 <img
-                    className=" rounded-t-lg  
-                                transition 
-                                duration-700 
+                    className=" rounded-t-lg
+                                transition
+                                duration-700
                                 hover:scale-125
                                 hover:-rotate-6
                                 "
@@ -58,11 +68,11 @@ const Project = ({ img, project, theme }) => {
             <div className="p-5">
                 <a href="#">
                     <h5
-                        className=" mb-2 
-                                    text-2xl 
-                                    font-bold 
-                                    tracking-tight 
-                                    text-gray-900 
+                        className=" mb-2
+                                    text-2xl
+                                    font-bold
+                                    tracking-tight
+                                    text-gray-900
                                     dark:text-white"
                     >
                         Project name
@@ -74,6 +84,8 @@ const Project = ({ img, project, theme }) => {
                 </p>
             </div>
         </div>
+
+       
     );
 };
 
