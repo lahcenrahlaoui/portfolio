@@ -4,7 +4,7 @@ const Projects = ({ theme }) => {
     const projects = [
         {
             name: "first",
-            img: "https://www.greenofficemovement.org/wp-content/uploads/2020/10/Screenshot-2020-10-07-at-12.36.18-249x300.png",
+            img: "https://i.ibb.co/j5cch4S/i.png",
         },
         {
             name: "second",
@@ -48,9 +48,9 @@ const Projects = ({ theme }) => {
                                 py-12 
                                 grid 
                                 grid-rows-[400px_minmax(100px,_1fr)]
-                                grid-cols-3
+                                grid-cols-1
                                 sm:grid-cols-1
-                                md:grid-cols-3 
+                                md:grid-cols-2 
                                 lg:grid-cols-3  
                                 gap-10  "
                 >

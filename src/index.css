@@ -6,21 +6,22 @@
 * {
     font-family: "Source Sans Pro", sans-serif;
     font-family: "Titillium Web", sans-serif;
-    
 }
-body{
+body {
     overflow-x: hidden;
+
+    min-width: 560px;
 }
 
-.app{
-    background:rgb(38,38,38);
-    color : #ffffff;
+.app {
+    background: rgb(38, 38, 38);
+    color: #ffffff;
 
-    transition: 0.7s all ;
+    transition: 0.7s all;
 }
 
-.light{
-    background:rgb(255, 255, 255);
-    color : #1b1b1b;
+.light {
+    background: rgb(255, 255, 255);
+    color: #1b1b1b;
     transition: 0.7s all;
 }

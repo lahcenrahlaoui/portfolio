@@ -152,7 +152,7 @@ const Hero = () => {
             <motion.img
                 variants={cardVariants}
                 src="https://images.business.com/app/uploads/2019/05/05125715/Video-game-developer.png"
-                className=" flex justify-center items-center"
+                className=" flex justify-center items-center min-[560px]:visible invisible"
             />
         </motion.div>
     );

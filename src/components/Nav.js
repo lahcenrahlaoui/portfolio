@@ -22,14 +22,48 @@ const Nav = ({ onClick, theme }) => {
     `;
 
     return (
-        <FadeInDownNav className=" grid  grid-cols-4 gap-4  mx-40 h-24  ">
-            <h1 className="flex items-center justify-center text-2xl ">
+        <FadeInDownNav className="  grid  
+                                    grid-cols-1
+                                    gap-4  
+                                    mx-40 
+                                    h-24 
+                                    min-[560px]:grid-cols-4
+                                    max-[560px]:h-72
+                                    max-[560px]:mx-10
+                                    ">
+
+            <h1 className=" flex 
+                            items-center 
+                            justify-center 
+                            text-2xl ">
+
                 PORTFOLIO
             </h1>
-            <ul className="col-span-2 flex  lg:px-[22%] sm:px-[5%]  text-lg font-medium	h-full items-center justify-between ">
+            <ul className=" col-span-2 
+                            lg:px-[22%] 
+                            sm:px-[5%]  
+                            text-lg 
+                            font-medium	
+                            h-full
+
+                            flex  
+                            items-center 
+                            justify-between  
+                            
+                            max-[560px]:block"
+                            >
                 {navRendered}
             </ul>
-            <div className=" flex items-center justify-center ml-10">
+            <div className=" flex 
+                             items-center 
+                             justify-center 
+                             ml-10
+                             max-[560px]:items-start
+                             max-[560px]:justify-start
+                             max-[560px]:ml-0
+                             max-[560px]:-mt-10
+                             "
+                             >
                 <DarkModeSwitch
                     checked={!theme}
                     onChange={handleClick}
