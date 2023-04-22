@@ -30,9 +30,10 @@ const Project = ({ img, project, theme }) => {
          *
          *
          */
-        
+
         <div
             className=" max-w-sm
+                        max[500px]:w-80
                         bg-white
                         rounded-lg
                         shadow

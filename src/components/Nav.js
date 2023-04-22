@@ -27,7 +27,7 @@ const Nav = ({ onClick, theme }) => {
                                     gap-4  
                                     mx-40 
                                     h-24 
-                                    min-[560px]:grid-cols-4
+                                    min-[680px]:grid-cols-4
                                     max-[560px]:h-72
                                     max-[560px]:mx-10
                                     ">
@@ -58,10 +58,10 @@ const Nav = ({ onClick, theme }) => {
                              items-center 
                              justify-center 
                              ml-10
-                             max-[560px]:items-start
-                             max-[560px]:justify-start
-                             max-[560px]:ml-0
-                             max-[560px]:-mt-10
+                             max-[860px]:items-start
+                             max-[860px]:justify-start
+                             max-[860px]:ml-0
+                             max-[860px]:-mt-10
                              "
                              >
                 <DarkModeSwitch
