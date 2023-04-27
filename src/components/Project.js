@@ -1,36 +1,7 @@
 const Project = ({ img, project, theme }) => {
+    console.log(img.gallery_images)
     return (
-        // <div
-        //     className={` ${
-        //         !theme ? "bg-gray-400 text-black" : ""
-        //     } cursor-pointer h-96 w-80 overflow-hidden rounded-xl
-        // shadow-[0px_2px_8px_0px_rgba(99,99,99,0.2)]
-        //  transition duration-200 hover:scale-105`}
-        // >
-        //     <img
-        //         src={img}
-        //         style={{
-        //             minWidth: "100%",
-        //             minHeight: "70%",
-        //             maxWidth: "100%",
-        //             maxHeight: "70%",
-        //         }}
-        //     />
-        //     <div className=" text-center text-2xl text-bold py-9  ">
-        //         {project}
-        //     </div>
-        // </div>
-        /***************************************
-         *
-         *
-         *
-         *
-         *
-         *
-         *
-         *
-         */
-
+      
         <div
             className=" max-w-sm
                         max[500px]:w-80
@@ -76,7 +47,7 @@ const Project = ({ img, project, theme }) => {
                                     text-gray-900
                                     dark:text-white"
                     >
-                        Project name
+                        {project}
                     </h5>
                 </a>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">

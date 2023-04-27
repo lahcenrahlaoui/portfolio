@@ -1,30 +1,27 @@
 import Project from "./Project";
 
+import funfolio from "../images/funfolio.png";
+import gallery_images from "../images/gallery_ images.png";
+import quizathon from "../images/quizathon.png";
+import portfolio from "../images/portfolio.png";
+
 const Projects = ({ theme }) => {
     const projects = [
         {
-            name: "first",
-            img: "https://i.ibb.co/j5cch4S/i.png",
+            name: "FunFolio",
+            img:  funfolio ,
         },
         {
-            name: "second",
-            img: "https://i-a.d-cd.net/4wWXO2kX2YkiHMbHKJIy-OzM1rM-1920.jpg",
+            name: "Gallery images",
+            img:  gallery_images ,
         },
         {
-            name: "third",
-            img: "https://picsum.photos/id/3/320",
+            name: "Quizathon",
+            img:  quizathon ,
         },
         {
-            name: "forth",
-            img: "https://picsum.photos/id/4/320",
-        },
-        {
-            name: "fifth",
-            img: "https://picsum.photos/id/5/320",
-        },
-        {
-            name: "sixth",
-            img: "https://picsum.photos/id/6/320",
+            name: "Portfolio",
+            img:  portfolio ,
         },
     ];
     const renderedProjects = projects.map((project) => {
@@ -63,12 +60,3 @@ const Projects = ({ theme }) => {
 
 export default Projects;
 
-// px-36
-//                                 py-12
-//                                 grid
-//                                 grid-rows-[400px_minmax(100px,_1fr)]
-//                                 grid-cols-3
-//                                 sm:grid-cols-1
-//                                 md:grid-cols-3
-//                                 lg:grid-cols-3
-//                                 gap-10
