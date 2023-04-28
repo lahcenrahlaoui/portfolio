@@ -9,25 +9,30 @@ const Projects = ({ theme }) => {
     const projects = [
         {
             name: "FunFolio",
-            img:  funfolio ,
+            img: funfolio,
+            link:"https://lahcenrahlaoui.github.io/rawg-games"
         },
         {
             name: "Gallery images",
-            img:  gallery_images ,
+            img: gallery_images,
+            link:"https://lahcenrahlaoui.github.io/fakeUsers"
         },
         {
             name: "Quizathon",
-            img:  quizathon ,
+            img: quizathon,
+            link:"https://lahcenrahlaoui.github.io/quiz-game"
         },
         {
             name: "Portfolio",
-            img:  portfolio ,
+            img: portfolio,
+            link:"https://lahcenrahlaoui.github.io/portfolio"
         },
     ];
     const renderedProjects = projects.map((project) => {
         return (
             <Project
                 key={project.name}
+                link={project.link}
                 project={project.name}
                 img={project.img}
                 theme={theme}
@@ -35,28 +40,22 @@ const Projects = ({ theme }) => {
         );
     });
 
+
+    const handleClickScroll = () => {
+        const element = document.getElementById('section-1');
+        if (element) {
+          // 👇 Will scroll smoothly to the top of the next section
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+      
     return (
-        <div className="flex flex-col justify-center items-center gap-8 py-20">
+        <div className="flex flex-col justify-center  items-center gap-8 py-20">
             <div className="text-4xl">Projects</div>
-            <div className="flex justify-center items-center ">
-                <div
-                    className="
-                                px-36 
-                                py-12 
-                                grid 
-                                grid-rows-[400px_minmax(100px,_1fr)]
-                                grid-cols-1
-                                sm:grid-cols-1
-                                md:grid-cols-2 
-                                lg:grid-cols-3  
-                                gap-10  "
-                >
-                    {renderedProjects}
-                </div>
-            </div>
+            <div id="Projects" class="grid grid-cols-2 gap-8 transition-all duration-1000	 px-4 py-2 sm:px-20 sm:py-16 md:px-36 md:py-32">{renderedProjects}</div>
         </div>
     );
 };
 
 export default Projects;
-

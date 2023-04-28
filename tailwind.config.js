@@ -2,6 +2,9 @@
 module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
+        scale: {
+            '140':'1.4'
+        },
         extend: {
             colors: {
                 "btn-yellow": "#ffbd2e",
@@ -9,6 +12,7 @@ module.exports = {
                 twitter: "#1DA1F2",
                 linkedin: "#0e76a8",
                 github: "#171515",
+                card: "rgb(184,175,166)",
             },
         },
     },

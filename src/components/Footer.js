@@ -7,7 +7,7 @@ import {
 
 const Footer = () => {
     return (
-        <div className="h-20 flex justify-center ">
+        <div id="Contact" className="h-20 flex justify-center ">
             <div className="flex justify-between w-96 text-4xl">
                 <div>
                     <GrFacebookOption className="hover:text-facebook"/>{" "}

@@ -1,14 +1,21 @@
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
-import { bounceIn, fadeInDown, fadeInUp } from "react-animations";
+import {  fadeInDown } from "react-animations";
 import styled, { keyframes } from "styled-components";
+
+import { Link } from "react-scroll";
 
 const Nav = ({ onClick, theme }) => {
     const navList = ["Projects", "About", "Contact"];
+
+
+ 
+    
+
     const navRendered = navList.map((item, idx) => {
         return (
             <li key={idx} className="cursor-pointer hover:text-slate-400">
-                <a href={`#${item}`}> {item} </a>
+                 <Link activeClass="active" smooth spy to={item}>{item} </Link>
             </li>
         );
     });
