@@ -49,11 +49,11 @@ const Projects = ({ theme }) => {
         }
       };
 
-      
+
     return (
         <div className="flex flex-col justify-center  items-center gap-8 py-20">
             <div className="text-4xl">Projects</div>
-            <div id="Projects" class="grid grid-cols-2 gap-8 transition-all duration-1000	 px-4 py-2 sm:px-20 sm:py-16 md:px-36 md:py-32">{renderedProjects}</div>
+            <div id="Projects" className="grid grid-cols-2 gap-8 transition-all duration-1000	 px-4 py-2 sm:px-20 sm:py-16 md:px-36 md:py-32">{renderedProjects}</div>
         </div>
     );
 };
